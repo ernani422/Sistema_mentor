@@ -16,7 +16,7 @@
             <input type="text">
         </form>
     </div> 
-    
+    cadastro-confirmcao-senha
     <div>
         <h2> Faça seu cadastro </h2>
         <form action= "#" method="POST">
@@ -29,7 +29,7 @@
             <label for="cadastro-senha">senha: </label>
             <input type="password">
 
-            <label for="cadastro-confirmcao-senha">cadastro-confirmcao-senha </label>
+            <label for="cadastro-confirmcao-senha">confirme sua senha </label>
             <input type="password">
 
 </body>
