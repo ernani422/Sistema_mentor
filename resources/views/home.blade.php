@@ -24,26 +24,26 @@
         <form action= "/cadastrar" method="POST">
             @csrf
             <label for="cadastro-login">Login: </label>
-            <input type="text" name="nome" id="cadastro_login">
+            <input value={{old('nome')}}type="text" name="nome" id="cadastro_login">
             @error('nome')
                 {{$message}}
             @enderror
 
             <label for="cadastro-email">Email; </label>
-            <input type="text" name="email" id="cadastro_email">
+            <input value={{old('email')}} type="text" name="email" id="cadastro_email">
             @error('email')
                 {{$message}}
             @enderror
 
             <label for="cadastro-senha">senha: </label>
-            <input type="password" name="senha" id="cadastro_senha">
+            <input value={{old('senha')}} type="password" name="senha" id="cadastro_senha">
             @error('senha')
             {{$message}}
         @enderror
 
 
             <label for="cadastro-confirmcao-senha">confirme sua senha </label>
-            <input type="password" name="senha_confirmation" id="cadastro-senha-confirmacao">
+            <input value={{old('password')}} type="password" name="senha_confirmation" id="cadastro-senha-confirmacao">
             @error('senha_confirmation')
             {{$message}}
         @enderror
